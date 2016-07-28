@@ -3,7 +3,7 @@ Currently in progress of completion.
 Algorithms On Graphs is a course offered by Coursera. 
 
 
-<h4>Graph Representation</h4>: 
+<h4>Graph Representation</h4>
 First line contains non-negative integers n(numbers) and m(# of edges).
 
 Vertices are from 1 to n.  U V where 1 ≤ u, v ≤ n are endpoints of the edge.

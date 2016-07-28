@@ -3,47 +3,35 @@ Currently in progress of completion.
 Algorithms On Graphs is a course offered by Coursera. 
 
 
-Graph Representation: 
-The first line contains non-negative integers n and m — the number of vertices and the number of edges respectively.
+<h4>Graph Representation</h4>: 
+First line contains non-negative integers n(numbers) and m(# of edges).
 
-The vertices are always numbered from 1 to n. Each of the following m lines defines an edge in the format u v where 1 ≤ u, v ≤ n are endpoints of the edge.
-
+Vertices are from 1 to n.  U V where 1 ≤ u, v ≤ n are endpoints of the edge.
+<br><br>
 Sample: 
 
 An undirected graph with four vertices and five edges:
 
 4 5
-
 2 1
-
 4 3
-
 1 4
-
 2 4
-
 3 2
 
 Visualization: <img src = "https://i.gyazo.com/feda46550e82761c7947ef9fd8ca5702.png">
 
 
 A directed graph with five vertices and eight edges.
+
 5 8
-
 4 3
-
 1 2
-
 3 1
-
 3 4
-
 2 5
-
 5 1
-
 5 4
-
 5 3
 
 Visualization: <img src = "https://i.gyazo.com/9c2ddec1534b109fd6303f9ba5fba730.png">
@@ -51,11 +39,8 @@ Visualization: <img src = "https://i.gyazo.com/9c2ddec1534b109fd6303f9ba5fba730.
 
 A weighted directed graph with three vertices and three edges.
 3 3
-
 2 3 9
-
 1 3 5
-
 1 2 -2
 
 Visualization: <img src = "https://i.gyazo.com/153b9d1e3cdf466f0742311298b65053.png">

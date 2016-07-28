@@ -12,11 +12,11 @@ Sample:
 
 An undirected graph with four vertices and five edges:
 
-4 5
-2 1
-4 3
-1 4
-2 4
+4 5<br>
+2 1<br>
+4 3<br>
+1 4<br>
+2 4<br>
 3 2
 
 Visualization: <img src = "https://i.gyazo.com/feda46550e82761c7947ef9fd8ca5702.png">
@@ -24,23 +24,23 @@ Visualization: <img src = "https://i.gyazo.com/feda46550e82761c7947ef9fd8ca5702.
 
 A directed graph with five vertices and eight edges.
 
-5 8
-4 3
-1 2
-3 1
-3 4
-2 5
-5 1
-5 4
+5 8<br>
+4 3<br>
+1 2<br>
+3 1<br>
+3 4<br>
+2 5<br>
+5 1<br>
+5 4<br>
 5 3
 
 Visualization: <img src = "https://i.gyazo.com/9c2ddec1534b109fd6303f9ba5fba730.png">
 
 
 A weighted directed graph with three vertices and three edges.
-3 3
-2 3 9
-1 3 5
+3 3<br>
+2 3 9<br>
+1 3 5<br>
 1 2 -2
 
 Visualization: <img src = "https://i.gyazo.com/153b9d1e3cdf466f0742311298b65053.png">

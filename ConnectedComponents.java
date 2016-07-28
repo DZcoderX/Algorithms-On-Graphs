@@ -1,3 +1,21 @@
+Version 2 of Solvable Maze
+(Please refer to "README")
+
+Input: A graph is given in the standard format.
+
+Output: Output the number of connected components.
+
+Sample: 
+Input:
+4 2
+1 2
+3 2
+Output:
+2
+Explanation:
+There are two connected components here: {1; 2; 3} and {4}.
+Visualization: https://i.gyazo.com/1b6b3d9ffe9b960ea6991c3eeed08c30.png
+===========================================================================================================
 import java.util.ArrayList;
 import java.util.Scanner;
 

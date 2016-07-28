@@ -1,3 +1,30 @@
+Give any undirected graph and two distinct vertices u and v, and the program will check if there is a path between u and v.
+
+Input: (Refer to "README") 
+First line: n vertices and m edges.
+Next lines are two vertices. Last line: type the start and finish vertices. 
+Output:  1 if there is a path between u and v and 0 otherwise.
+
+Sample: 
+
+Input: 
+4 4
+1 2
+3 2
+4 3
+1 4
+1 4
+
+Output: 1
+
+Visualization: https://i.gyazo.com/ff930a8e23ee2c6b0aa8710d2f9599bd.png
+
+There are two paths between vertices 1 and 4: 1-4 and 1-2-3-4.
+
+
+
+
+==========================================================================================================================
 import java.util.ArrayList;  
 import java.util.Scanner;
 

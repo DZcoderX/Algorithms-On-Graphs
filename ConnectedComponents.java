@@ -28,7 +28,7 @@ public class ConnectedComponents {
             if (visited[i]) 
             	continue;
             dfs(i, adj, visited);
-            // After exhausted exploration, found one CC.
+            
             result++;
         }
         return result;

@@ -11,6 +11,7 @@ The vertices are always numbered from 1 to n. Each of the following m lines defi
 Sample: 
 
 An undirected graph with four vertices and five edges:
+
 4 5
 
 2 1

@@ -22,6 +22,21 @@ Visualization: https://i.gyazo.com/ff930a8e23ee2c6b0aa8710d2f9599bd.png
 There are two paths between vertices 1 and 4: 1-4 and 1-2-3-4.
 
 
+Input:
+4 4
+1 2
+4 1
+2 3
+3 1
+2 4
+Output:
+2
+Explanation:
+There is a unique shortest path between vertices 2 and 4 in this graph: 2 − 1 − 4.
+
+Visualization:https://i.gyazo.com/b293bea5eb9e43f8ac2875f2ba71dafc.png
+
+
 
 
 ==========================================================================================================================

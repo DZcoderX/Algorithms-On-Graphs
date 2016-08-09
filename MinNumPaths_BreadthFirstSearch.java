@@ -49,7 +49,7 @@ public class MinNumPaths_BreadthFirstSearch {
 	// adj = graph in ArrayList form
 	// t = the destination
     private static int distance(ArrayList<Integer>[] adj, int s, int t) {
-        //write your code here
+        
     	
     	int [] distance = new int[adj.length];
     	//Initializing all distances with an estimation of infinity (Aka max_value for coding)

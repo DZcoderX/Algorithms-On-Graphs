@@ -30,20 +30,14 @@ import java.util.Scanner;
 
 public class Reachability {
     private static int reach(ArrayList<Integer>[] adj, int x, int y) {
-    	
     	boolean[] visit = new boolean[adj.length];
     	return dfs(adj, x, y, visit);
-    	
     }
-    
     private static int dfs(ArrayList<Integer>[] adj, int source, int end, boolean[] visit){
-    	
     	if ( source == end)
     			return 1;
-    	
     	visit[source] = true;
     	//Recursively explore all unvisited(adjacent) verticies
-    	
     	for (int neighbour: adj[source]){
     		if(!visit[neighbour])
     			if( dfs(adj, neighbour, end, visit) == 1) return 1;

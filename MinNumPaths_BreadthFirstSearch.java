@@ -1,3 +1,48 @@
+/*
+If someone was to give me a list of cities and ask me what is the miniumn number of flight-paths to get from City X to City Y, this
+Breadth First Search algorithm will correctly determine the result. 
+
+This algorithm can compute 100 000 cities and 100 000 paths within 3 seconds. 
+
+Sample: 
+
+Input:
+4 4
+1 2
+4 1
+2 3
+3 1
+2 4
+Output:
+2
+Explanation:
+
+There is a unique shortest path between vertices 2 and 4 in this graph: 2 − 1 − 4
+Visualization: https://i.gyazo.com/49755fd602d150fdc2be43e4ef03845c.png
+========================================================================================================
+
+Input:
+5 4
+5 2
+1 3
+3 4
+1 4
+3 5
+Output:
+-1
+Explanation:
+
+There is no path between vertices 3 and 5 in this graph.
+Visualization: https://i.gyazo.com/116f1f1141e890ae1cd749d619c5014d.png
+*/
+
+
+
+
+
+
+
+=====================================================================================================================================
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;

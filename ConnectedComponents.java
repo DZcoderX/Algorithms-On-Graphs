@@ -3,7 +3,9 @@ Version 2 of Solvable Maze
 
 Input: A graph is given in the standard format.
 
-Output: Output the number of connected components.
+Output: Output the number of connected components with undirected graphs.
+
+The idea of the following algorithm is to determine that there is in fact an exit in the maze. 
 
 Sample: 
 Input:
@@ -25,23 +27,22 @@ public class ConnectedComponents {
         boolean[] visited = new boolean[adj.length];
         int result = 0;
         for (int i = 0; i < adj.length; i++) {
-            if (visited[i]) 
-            	continue;
-            dfs(i, adj, visited);
-            
-            result++;
+            if (!visited[i]){
+            	dfs(i, adj, visited);
+            	//The region of that specific CC have been explored
+            	//Moving on to next region (new CC)
+            	result++;
+            }
         }
         return result;
     }
     
-	
     private static void dfs(int vertex, ArrayList<Integer>[] adj, boolean[] visited) {
         // All connected vertices have same count of CC.
-    
+    	//For further explaination of the following code, refer to the Solvable_Maze file.
     	visited[vertex] = true;
         
     	for (int neighbor : adj[vertex]) {
-        
     		if (! visited[neighbor]) 
     			dfs(neighbor, adj, visited);
         }

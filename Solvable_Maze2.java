@@ -1,11 +1,13 @@
-Version 2 of Solvable Maze
+Part 2 of Solvable Maze
 (Please refer to "README")
 
 Input: A graph is given in the standard format.
 
 Output: Output the number of connected components with undirected graphs.
 
-The idea of the following algorithm is to determine that there is in fact an exit in the maze. 
+If a maze have 5 sections but only 4 are connected to one another, the algorithm below will output 4. 
+
+The algorithm below can compute up to 1000 nodes of a maze and 1000 paths between the nodes well under 1.5 seconds. 
 
 Sample: 
 Input:
@@ -21,7 +23,7 @@ Visualization: https://i.gyazo.com/1b6b3d9ffe9b960ea6991c3eeed08c30.png
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ConnectedComponents {
+public class Solvable_Maze2 {
 	private static int numberOfComponents(ArrayList<Integer>[] adj) {
         /**Connected Components of undirected graph.*/
         boolean[] visited = new boolean[adj.length];

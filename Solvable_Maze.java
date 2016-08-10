@@ -5,6 +5,8 @@ First line: n vertices and m edges.
 Next lines are two vertices. Last line: type the start and finish vertices. 
 Output:  1 if there is a path between u and v and 0 otherwise.
 
+Under 1.5 seconds, the following algorithm can compute up to 1000 nodes of a maze and the paths between the nodes.
+
 Sample: 
 
 Input: 

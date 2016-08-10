@@ -1,3 +1,52 @@
+/*
+
+This program determines whether a given directed graph contains a cycle or not.
+
+In less than 1.5 seconds, the following algorithm can compute 1000 nodes of a graph and 1000 paths between the nodes.
+
+A fabulous use for this algorithm can determine if a student has all the pre-requisities courses to take another course within
+a school system. 
+For ex: 
+Bob wants to take a "Learn how to make cake" course but the school only offer that course to student who completed "Learn about milk" course 
+and "Learn about Eggs" Course. This algorithm may be used to determine if Bob is qualified or not.
+
+
+Sample:
+
+Input:
+4 4
+1 2
+4 1
+2 3
+3 1
+Output:
+1
+Explanation: This graph contains a cycle: 3 → 1 → 2 → 3.
+Visualization: https://i.gyazo.com/933c85fefeae1cc4076ecfafb96cfad1.png
+
+Input:
+5 7
+1 2
+2 3
+1 3
+3 4
+1 4
+2 5
+3 5
+4
+Output:
+0
+Explanation:
+There is no cycle in this graph. This can be seen, for example, by noting that all edges in this graph
+go from a vertex with a smaller number to a vertex with a larger number.
+
+Visualization: https://i.gyazo.com/a553262170496732088be8ca031533d8.png
+
+
+*/
+
+
+
 import java.util.ArrayList; 
 import java.util.Scanner;
 

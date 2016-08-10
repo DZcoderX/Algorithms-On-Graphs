@@ -42,22 +42,28 @@ Visualization:https://i.gyazo.com/b293bea5eb9e43f8ac2875f2ba71dafc.png
 ==========================================================================================================================
 import java.util.ArrayList;  
 import java.util.Scanner;
-
-public class Reachability {
+//Using DFS (Decomposition First Search)
+public class Solvable_Maze {
     private static int reach(ArrayList<Integer>[] adj, int x, int y) {
+        //Boolean array is used to determine if nodes are visited or not
     	boolean[] visit = new boolean[adj.length];
+    	//Setting x as the starting point
     	return dfs(adj, x, y, visit);
     }
     private static int dfs(ArrayList<Integer>[] adj, int source, int end, boolean[] visit){
-    	if ( source == end)
+    	if (source == end)
     			return 1;
+    	//Marking source (previously named x) as true (visited)
     	visit[source] = true;
-    	//Recursively explore all unvisited(adjacent) verticies
+    	//Recursively explore all unvisited but adjacent verticies
     	for (int neighbour: adj[source]){
     		if(!visit[neighbour])
     			if( dfs(adj, neighbour, end, visit) == 1) return 1;
     	}
-    	visit[source] = false;
+    	
+    	//Since the array visited is initialized with false, no need to set "visit[source] = false;"
+    	//Also means there is not path between source and end
+    	
     	return 0;
     }
 

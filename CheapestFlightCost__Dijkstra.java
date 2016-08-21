@@ -1,3 +1,52 @@
+/*
+This program calculates cheapest cost for a flight using Dijkstra's Algorithm.
+The graphs used are weighted and directed graphs
+
+In under 3 seconds, this program can compute 1000 airports, 100 000 flight paths, and the cost of each path up 1000 to determine the
+cheapest cost from airport A to airport B.
+
+-----------------------------------------------------------------------------------------------------------
+Sample:
+Input:
+4 4 <-- 1st # is # of vertices(airports) and 2nd # is # of edges(flight paths)
+1 2 1<-- 1st two # is telling the program that they are connected and 3rd # is how much it costs (Implemented the usage of Weighted Graphs)
+4 1 2
+2 3 2
+1 3 5
+1 3 <-- The start and end point respectively
+
+Output:
+3
+
+Explanation:
+There is a unique shortest path from vertex 1 to vertex 3 in this graph (1 ! 2 ! 3), and it has
+weight 3.
+
+Visualization: https://i.gyazo.com/459ddd9475e436943d533eecbf9bb40f.png
+-----------------------------------------------------------------------------------------------------------
+Sample: 
+
+Input:
+5 9
+1 2 4
+1 3 2
+2 3 2
+3 2 1
+2 4 2
+3 5 4
+5 4 1
+2 5 3
+3 4 4
+1 5
+
+Output:
+6
+
+Explanation: There are two paths from 1 to 5 of total weight 6: 1 -> 3 -> 5 and 1 -> 3 -> 2 -> 5.
+
+Visualization: https://i.gyazo.com/9d4e7e4207433681ebb060cfab4279a9.png
+*/
+
 import java.util.*; 
 import java.io.*;
 

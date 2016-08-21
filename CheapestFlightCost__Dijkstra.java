@@ -4,7 +4,6 @@ The graphs used are weighted and directed graphs
 
 In under 3 seconds, this program can compute 1000 airports, 100 000 flight paths, and the cost of each path up 1000 to determine the
 cheapest cost from airport A to airport B.
-
 -----------------------------------------------------------------------------------------------------------
 Sample:
 Input:

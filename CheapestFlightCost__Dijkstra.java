@@ -1,8 +1,8 @@
 /*
 This program calculates cheapest cost for a flight using Dijkstra's Algorithm.
-The graphs used are weighted and directed graphs
+(Using weighted and directed graphs)
 
-In under 3 seconds, this program can compute 1000 airports, 100 000 flight paths, and the cost of each path up 1000 to determine the
+In under 3 seconds, this program can compute 1000 airports, 100 000 flight paths, and the cost(max. 1000) of each path to determine the
 cheapest cost from airport A to airport B.
 -----------------------------------------------------------------------------------------------------------
 Sample:
@@ -18,8 +18,8 @@ Output:
 3
 
 Explanation:
-There is a unique shortest path from vertex 1 to vertex 3 in this graph (1 ! 2 ! 3), and it has
-weight 3.
+There is a unique shortest path from vertex 1 to vertex 3 in this graph (1 -> 2 -> 3), and it has a
+weight of 3.
 
 Visualization: https://i.gyazo.com/459ddd9475e436943d533eecbf9bb40f.png
 -----------------------------------------------------------------------------------------------------------
@@ -62,7 +62,7 @@ public class CheapestFlightCost {
             //Setting the prev value to "null"
             prev[i] = -1;
         }
-		//Setting the source as distance 0
+		//Setting the source as distance 0 since we being at the source
 		dist[s] = 0;
 		
 		for (int j = 0; j < n; j ++){
@@ -91,7 +91,7 @@ public class CheapestFlightCost {
 	}
 	
 	/* This procedure will also extract the minimumn distance
-	 * value node. The reason is after each iteration, the*/
+	 * value node.*/
 	public static int extractMin(int[] dist, boolean[] visited){
 		int minDist = Integer.MAX_VALUE, minVertex = -1;
 		
